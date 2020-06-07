@@ -272,7 +272,7 @@ int main(int argc, char *argv[]){
     //Finalize the MPI environment
     MPI_Finalize();
 
-    f (my_rank ==0){
+    if (my_rank ==0){
         printf("Parallel program ellapsed time: %f seconds\n", (t2-t1));
 
     }
